@@ -1,0 +1,11 @@
+PLANTUML SEQUENCE
+
+@startuml
+
+User -> Server: Requests Image from OpenverseAPI
+...
+Server --> User: Obtains Image
+...Image Is Displayed...
+Server --> User: Search Complete !
+
+@enduml
