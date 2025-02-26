@@ -1,0 +1,10 @@
+PLANTUML USECASE
+
+@startuml
+:user: -left-> (Log in)
+:user: -right-> (Save and delete search history)
+:user: -up-> (Search Images)
+:user: -down-> (Verify account securely)
+@enduml
+
+ALTERNATIVELY:
