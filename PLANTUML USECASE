@@ -7,4 +7,27 @@ PLANTUML USECASE
 :user: -down-> (Verify account securely)
 @enduml
 
-ALTERNATIVELY:
+ALTERNATIVELY (Better version - Needs ammending):
+
+@startuml
+left to right direction
+actor "User" as U
+rectangle SoftwareFunctions {
+  usecase "Log In Securely" as UC1
+  usecase "Search for Images" as UC2
+  usecase "View and Delete Search History" as UC3
+}
+rectangle ExtraFunctions {
+  usecase "Save Search History" as UC4
+  usecase "Verify Account" as UC5
+  usecase "Handle Data Securely" as UC6
+}
+
+U --> UC1
+U --> UC2
+U --> UC3
+U --> UC4
+U --> UC5
+U --> UC6
+
+@enduml
